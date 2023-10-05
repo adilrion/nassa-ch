@@ -1,0 +1,68 @@
+{
+    "navbar": [
+        {
+            "id": 1,
+            "title": "Home",
+            "url": "/"
+        },
+        {
+            "id": 2,
+            "title": "About Us",
+            "url": "/about"
+        },
+        {
+            "id": 6,
+            "title": "Documentation",
+            "url": "/resources/documentation"
+        },
+        {
+            "id": 5,
+            "title": "Visualization",
+            "url": "/visualization",
+            "subMenu": [
+                {
+                    "id": 51,
+                    "title": "Data Chart",
+                    "url": "/visualization/data-chart"
+                },
+                {
+                    "id": 52,
+                    "title": "Comparison Chart",
+                    "url": "/visualization/comparison-chart"
+                },
+                {
+                    "id": 53,
+                    "title": "Real-Time Updates",
+                    "url": "/visualization/real-time-updates"
+                },
+                {
+                    "id": 54,
+                    "title": "Timing And Alerts",
+                    "url": "/visualization/timing-and-alerts"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "title": "Learning Center",
+            "url": "/educational-content/learning-center",
+            "subMenu": [
+                {
+                    "id": 61,
+                    "title": "Machine Learning",
+                    "url": "/educational-content/machine-learning-tutorial"
+                },
+                {
+                    "id": 62,
+                    "title": "Space Weather",
+                    "url": "/educational-content/space-weather-tutorial"
+                },
+                {
+                    "id": 63,
+                    "title": "Community Engagement",
+                    "url": "/educational-content/community-engagement"
+                }
+            ]
+        }
+    ]
+}
