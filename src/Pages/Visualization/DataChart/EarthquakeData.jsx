@@ -1,7 +1,7 @@
-import {CanvasJSReact} from '@canvasjs/react-charts';
+import React from 'react';
+import CanvasJSReact from '@canvasjs/react-charts';
 
 const CanvasJSChart = CanvasJSReact.CanvasJSChart;
-
 
 export const EarthquakeData = () => {
     const generateDataPoints = (noOfDps) => {
@@ -19,7 +19,7 @@ export const EarthquakeData = () => {
     };
 
     const options = {
-        theme: 'dark2', // 'light1', 'dark1', 'dark2'
+        theme: 'dark2',
         animationEnabled: true,
         zoomEnabled: true,
         title: {
@@ -34,9 +34,8 @@ export const EarthquakeData = () => {
     };
 
     return (
-        <div >
+        <div>
             <CanvasJSChart options={options} />
-
         </div>
     );
-}
+};
