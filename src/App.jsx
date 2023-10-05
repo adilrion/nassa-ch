@@ -26,7 +26,7 @@ export const App = ()=> {
               <Route path="/visualization/timing-and-alerts" element={<TimingAndAlerts />} /> */}
             </Routes>
           </div>
-          <Footer />
+          {/* <Footer /> */}
         </BrowserRouter>
 
       {/* </QueryClientProvider> */}
