@@ -2,7 +2,7 @@ import React from 'react';
 import CanvasJSReact from '@canvasjs/react-charts';
 
 const { CanvasJSChart } = CanvasJSReact;
-
+//update the chart with the
 export const EarthquakeData = () => {
     const generateDataPoints = (noOfDps) => {
         let xVal = 1;
