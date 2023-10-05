@@ -5,12 +5,26 @@ import {
   GeoJSON,
   ScaleControl
 } from 'react-leaflet';
-import tectonicPlates from './PB2002_boundaries.json';
 import { mapHeight, tectonicPlatesStyle, tileLayers } from '../constants';
 import {Earthquakes} from '../Earthquakes/Earthquakes';
 import {Legend} from '../Legend/Legend';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 export const EarthquakeMonitoringMap = () => {
+
+
+  const [data, setData] = useState(null)
+  
+  console.log(data)
+  useEffect(() => {
+    fetch('https://adilrion.github.io/developer-community-json/earth-data.json')
+      .then((data) => data.json())
+      .then((data) => setData(data))
+        .catch((error) => console.error(error));
+  }, []);
+
+
 
 
   return (
@@ -26,7 +40,7 @@ export const EarthquakeMonitoringMap = () => {
             <GeoJSON
               
 
-              data={tectonicPlates && tectonicPlates}
+              data={data && data}
               style={tectonicPlatesStyle}
             />
           </LayersControl.Overlay>
