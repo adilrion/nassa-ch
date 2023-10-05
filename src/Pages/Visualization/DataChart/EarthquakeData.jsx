@@ -1,7 +1,9 @@
 import React from 'react';
 import CanvasJSReact from '@canvasjs/react-charts';
 //var CanvasJSReact = require('@canvasjs/react-charts');
-const CanvasJSChart = CanvasJSReact.CanvasJSChart;
+
+var CanvasJS = CanvasJSReact.CanvasJS;
+var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 export const EarthquakeData = () => {
     const generateDataPoints = (noOfDps) => {
