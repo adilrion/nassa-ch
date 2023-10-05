@@ -1,4 +1,4 @@
-import {EarthquakeInformation} from "../EarthqakeInformation/EarthquakeInformation"
+// import {EarthquakeInformation} from "../EarthqakeInformation/EarthquakeInformation"
 import {DataChart} from "./DataChart/DataChart"
 
 export const Visualization = () => {
@@ -9,7 +9,7 @@ export const Visualization = () => {
       </header> */}
       
       <section>
-        <EarthquakeInformation />
+        {/* <EarthquakeInformation /> */}
         <DataChart/>
       </section>
     
