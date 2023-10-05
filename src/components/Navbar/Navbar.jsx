@@ -30,7 +30,7 @@ export function StickyNavbar() {
     }, []);
 
     useEffect(() => {
-        fetch('/src/components/Navbar/navigationData.json')
+        fetch('https://adilrion.github.io/developer-community-json/nasa-navbar.json')
             .then((data) => data.json())
             .then((data) => setNavData(data))
             .catch((error) => console.error(error));
