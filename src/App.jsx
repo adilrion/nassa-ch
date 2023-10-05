@@ -27,11 +27,11 @@ export const App = ()=> {
           <StickyNavbar />
           <div className="">
             <Routes>
-              <Route path="/" element={<T />} />
+              <Route path="/" element={<Home />} />
               <Route path="/home" element={<Home />} />
          <Route path="/about" element={<AboutUs />} />
               <Route path="/resources/documentation" element={<Resources />} />
-            {/* <Route path="/visualization" element={<Visualization />} /> */}
+            <Route path="/visualization" element={<Visualization />} />
               <Route path="/visualization/real-time-updates" element={<EarthquakeInformation />} />
               {/* <Route path="/visualization/data-chart" element={<DataChart />} /> */}
               <Route path="/visualization/comparison-chart" element={<ComparisonChart />} />
