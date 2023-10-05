@@ -1,7 +1,7 @@
 import {EarthquakeData} from "./EarthquakeData"
-import {EarthquakePrediction} from "./EarthquakePrediction"
+/* import {EarthquakePrediction} from "./EarthquakePrediction"
 import {SolarStormData} from "./SolarStormData"
-import {SolarStormPrediction} from "./SolarStormPrediction"
+import {SolarStormPrediction} from "./SolarStormPrediction" */
 
 export const DataChart = () => {
   return (
@@ -14,9 +14,9 @@ export const DataChart = () => {
       <section>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
           <EarthquakeData />
-          <EarthquakePrediction />
+       {/*    <EarthquakePrediction />
           <SolarStormData />
-          <SolarStormPrediction/>
+          <SolarStormPrediction/> */}
         </div>
       </section>
     
