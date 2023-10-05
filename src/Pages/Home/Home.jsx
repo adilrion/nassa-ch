@@ -1,7 +1,7 @@
 
 import {Banner} from '../../components/Banner/Banner'
 // import {EarthquakeInformation} from '../EarthqakeInformation/EarthquakeInformation'
-import {DataChart} from '../Visualization/DataChart/DataChart'
+// import {DataChart} from '../Visualization/DataChart/DataChart'
 
 export const Home = () => {
     return (
@@ -13,7 +13,7 @@ export const Home = () => {
           </div>
 
             {/* <EarthquakeInformation /> */}
-            <DataChart/>
+            {/* <DataChart/> */}
 
         </>
     )
