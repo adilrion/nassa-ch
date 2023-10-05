@@ -1,4 +1,4 @@
-import CanvasJSReact from '@canvasjs/react-charts';
+import {CanvasJSReact} from '@canvasjs/react-charts';
 
 const CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
