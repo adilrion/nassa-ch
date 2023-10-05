@@ -38,9 +38,7 @@ export const EarthquakeMonitoringMap = () => {
           ))}
           <LayersControl.Overlay name="Tectonic Plates">
             <GeoJSON
-              
-
-              data={data && data}
+              data={data ? data : null}
               style={tectonicPlatesStyle}
             />
           </LayersControl.Overlay>

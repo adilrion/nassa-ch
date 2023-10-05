@@ -1,18 +1,17 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import L from 'leaflet';
 import { useMap } from 'react-leaflet';
 import { useQuery } from '@tanstack/react-query';
-import {useStore} from '../../../hooks/useStore';
+import { useStore } from '../../../hooks/useStore';
 import { getEarthquakes } from '../../../api/earthquakes';
 import { onEachFeature } from './utils';
-import { geojsonMarkerOptions } from '../../../utils/utils'; 
-import {Spinner} from '../../../components/Spinner/Spinner';
-
-
+import { geojsonMarkerOptions } from '../../../utils/utils';
+import { Spinner } from '../../../components/Spinner/Spinner';
 
 let geojson;
 
-export const Earthquakes=()=> {
+export const Earthquakes = () => {
+
     const startTime = useStore((state) => state.startTime);
     const endTime = useStore((state) => state.endTime);
 
@@ -24,7 +23,7 @@ export const Earthquakes=()=> {
     const map = useMap();
 
     useEffect(() => {
-        if (!earthquakes) return;
+        if (!earthquakes || isLoading) return;
 
         if (map && geojson && map.hasLayer(geojson)) map.removeLayer(geojson);
 
@@ -37,9 +36,9 @@ export const Earthquakes=()=> {
         });
 
         if (map) geojson.addTo(map);
-    }, [earthquakes, map]);
+    }, [earthquakes, isLoading, map]);
 
     if (isLoading) return <Spinner />;
 
     return null;
-}
+};

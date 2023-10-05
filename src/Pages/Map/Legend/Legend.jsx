@@ -5,8 +5,7 @@ import 'leaflet/dist/leaflet.css';
 import './legend.css'; // Import your CSS styles
 import { circleMarkerColor } from '../../../utils/utils';
 
-
-export const Legend = () => {
+export const Legend = () => {           
     const map = useMap();
 
     useEffect(() => {
